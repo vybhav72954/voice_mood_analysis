@@ -1,0 +1,44 @@
+# Data — download RAVDESS manually
+data/raw/*
+data/processed/*
+
+# Generated outputs
+# outputs/features/*
+# outputs/models/*
+# outputs/results/*
+data/transcripts/*
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+
+# Models (large binary files)
+*.pkl
+*.pt
+*.pth
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+.coverage
+htmlcov/

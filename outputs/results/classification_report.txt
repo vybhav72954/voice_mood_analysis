@@ -1,0 +1,16 @@
+Best model : svm_rbf
+Test accuracy : 0.7454
+Test F1-macro : 0.7454
+Test ROC-AUC  : 0.9364
+
+                    precision    recall  f1-score   support
+
+  calm_description       0.77      0.84      0.80        43
+character_dialogue       0.73      0.81      0.77        58
+ dramatic_emphasis       0.68      0.70      0.69        57
+          suspense       0.72      0.62      0.67        29
+           urgency       0.95      0.69      0.80        29
+
+          accuracy                           0.75       216
+         macro avg       0.77      0.73      0.75       216
+      weighted avg       0.75      0.75      0.75       216

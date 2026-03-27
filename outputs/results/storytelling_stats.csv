@@ -1,0 +1,8 @@
+feature,u_statistic,p_value,significant,effect_size_r
+spectral_rolloff_std,289926.0,0.0,True,0.1651
+spectral_centroid_std,278748.0,0.000109,True,0.1202
+pitch_std,277782.0,0.000181,True,0.1163
+zcr_std,276569.0,0.000333,True,0.1115
+duration,272235.5,0.002456,True,0.0941
+tempo,264513.5,0.042322,True,0.063
+rms_std,251618.0,0.718605,False,0.0112
