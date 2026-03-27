@@ -46,7 +46,7 @@ RAVDESS emotions are mapped to narrative tones as follows:
 ### Setup
 
 ```bash
-git clone https://github.com/vybhav72954/tabletalk.git
+git clone git clone https://github.com/vybhav72954/voice_mood_analysis.git
 cd tabletalk
 
 python -m venv .venv

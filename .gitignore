@@ -1,6 +1,5 @@
 # Data — download RAVDESS manually
 data/raw/*
-data/processed/*
 
 # Generated outputs
 # outputs/features/*

@@ -30,6 +30,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.svm import SVC
 
+from xgboost import XGBClassifier
+
 from src.config import (
     CV_FOLDS,
     FEATURES_DIR,
@@ -178,12 +180,26 @@ def _build_models(random_state: int = RANDOM_STATE) -> dict[str, Pipeline]:
         ("clf", ensemble),
     ])
 
+    xgb = Pipeline([
+        ("scaler", StandardScaler()),
+        ("clf", XGBClassifier(
+            n_estimators=300,
+            max_depth=6,
+            learning_rate=0.1,
+            random_state=random_state,
+            eval_metric="mlogloss",
+            verbosity=0,
+            n_jobs=-1,
+        )),
+    ])
+
     return {
         "logistic_regression": lr,
         "svm_rbf": svm,
         "random_forest": rf,
         "mlp": mlp,
         "voting_ensemble": ensemble_pipeline,
+        "xgboost": xgb,
     }
 
 

@@ -8,7 +8,6 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).parent.parent
 DATA_DIR = ROOT_DIR / "data"
 RAW_DIR = DATA_DIR / "raw"
-PROCESSED_DIR = DATA_DIR / "processed"
 TRANSCRIPTS_DIR = DATA_DIR / "transcripts"
 OUTPUTS_DIR = ROOT_DIR / "outputs"
 FEATURES_DIR = OUTPUTS_DIR / "features"
